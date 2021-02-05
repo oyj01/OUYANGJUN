@@ -1,0 +1,52 @@
+.OUYANGJUN {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 50vh;
+  display:none;
+  top: 0;
+  z-index: -30;
+}
+.align {
+  width: 100%;
+  height: 17.8px;
+  position: absolute;
+  top: 50%;
+}
+.align .logo_name {
+  width: 245px;
+  height: 17.8px;
+  background: url(../img/logo_OUYANGJUN.png) no-repeat 100% 100%;
+  background-size: 245px 17.8px;
+  margin: 0 auto;
+}
+
+/* 悬浮预览背景 */
+.display_background {
+  /* margin-top: 50vh; */
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.mask_background {
+  position: absolute;
+  top: calc(50vh + 100px);
+  width: 60%;
+  height: 100vh;
+  background-color:#ACD2D8;
+  /* background-color:#242424; */
+  z-index: 70;
+  margin-left: 20%;  
+  display: none;
+  /* opacity:70% */
+}
+
+.preview_photo {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  display: none;
+}

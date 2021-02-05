@@ -1,0 +1,242 @@
+.profile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150vh;
+  background-color: #ACD2D8;
+  display: none;
+}
+.profile .profile_OUYANGJUN {
+  position: fixed;
+  width: 100%;
+  height: 50vh;
+  top: 0;
+  z-index: 10;
+}
+.profile_align {
+  width: 100%;
+  height: 17.8px;
+  position: absolute;
+  top: 50%;
+}
+.profile_align .profile_logo_name {
+  width: 245px;
+  height: 17.8px;
+  background: url(../img/logo_OUYANGJUNwhite.png) no-repeat 100% 100%;
+  background-size: 245px 17.8px;
+  margin: 0 auto;
+  display: none;
+}
+.profile .profile_background {
+  position: absolute;
+  width: 60%;
+  height: 100vh;
+  top: 50vh;
+  left: 20%;
+  background-color: white;
+  opacity: 95%;
+  display: none;
+}
+
+.profile_background .profile_limit{
+  position: relative;
+  margin-top: 15%;
+  margin-left: 15%;
+  width: 70%;
+  height: 70%;
+  display: none;
+}
+ .profile_photo {
+  float: right;
+  width: 240px;
+  height: 240px;
+  z-index: 500;
+}
+ .profile_text_limit {
+  position: relative;
+  width: 350px;
+  height: 180px;
+  background-color: white;
+}
+.profile_text_limit p {
+  font-size: 12px;
+  margin-bottom: 7px;
+  font-family: Gadugi;
+  color: #707070;
+  letter-spacing:2px;
+  line-height: 33px;
+  
+}
+.profile_text_limit h3 {
+  font-weight: lighter;
+  margin-bottom: 10px;
+  font-family: Gadugi;
+  color: #707070;
+  letter-spacing:2px
+}
+
+.profile_text_limit1 {
+  margin-top: 40px;
+  width: 380px;
+  height: 180px;
+  background-color: white;
+}
+.profile_text_limit1 dl dt {
+  width: 120px;
+  float: left;
+  font-size: 12px;
+  font-family: Gadugi;
+  color: #707070;
+  letter-spacing: 0.18em;
+  clear: both;
+}
+dl dd {
+  margin-bottom: 7.5px;
+  float: left;
+  font-size: 12px;
+  font-family: Gadugi;
+  color: #707070;
+  letter-spacing:2px
+}
+
+.cha{
+	width: 30px;
+	height: 30px;
+  position: fixed; 
+  left: 20px;
+  top: 20px;
+  z-index: 500;
+  display: none;
+}
+.cha1,
+.cha2{
+  position: absolute; 
+  height: 30px;
+  width: 2px;
+  top: 2px;
+  right: 9px;  
+  background:white;
+  border-radius: 2px;
+}
+.cha1{
+  transform: rotate(45deg);  
+}
+.cha2{
+  transform: rotate(-45deg);
+}
+
+/* 全局设置 */
+ul {
+  list-style: none;
+}
+ul li{
+  float: left;
+  list-style: none;
+}
+h2 {
+  font-family: Gadugi;
+  color: #707070;
+  letter-spacing:2px
+}
+* {
+  margin: 0;
+  padding: 0;
+}    
+
+@media (min-width: 1840px) {
+  .profile_photo {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (min-width: 1480px) and (max-width: 1839px) {
+  
+}
+
+@media (min-width: 1030px) and (max-width: 1479px) {
+ .profile_text_limit {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+  .profile_photo {
+    width: 240px;
+    height: 240px;
+  }
+  .profile_text_limit1 {
+    margin-top: 80px;
+  }
+}
+
+
+@media (min-width: 700px) and (max-width: 1030px) {
+  .profile {
+    height: 200vh;
+  }
+  .profile .profile_background {
+    height: 150vh;
+  }
+  .profile_limit {
+    margin: 0 auto;
+  }
+  .profile_text_limit {
+    width: 240px;
+    height: auto;
+    margin-bottom: 40px;
+    margin-left: calc((100% - 240px)/2);
+  }
+  .profile_photo {
+    float: none;
+    margin-left: calc((100% - 240px)/2);
+    margin-top: 18%;
+    margin-bottom: 40px;
+    width: 240px;
+    height: 240px;
+  }
+  .profile_text_limit1 {
+    width: 240px;
+    margin-top: 60px;
+    margin-left: calc((100% - 240px)/2);
+  }
+  .profile_text_limit1 dl dt {
+    width: 60px;
+  }
+}
+
+@media (max-width: 699px) {
+  .profile {
+    height: 185vh;
+  }
+  .profile .profile_background {
+    height: 135vh;
+  }
+
+  .profile_background .profile_limit{
+    margin: 0 auto;
+  }
+  .profile_text_limit {
+    width: 200px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: calc((100% - 200px)/2);
+  }
+  .profile_photo {
+    float: none;
+    margin-left: calc((100% - 200px)/2);
+    margin-top: 25%;
+    width: 200px;
+    height: 200px;
+  }
+  .profile_text_limit1 {
+    width: 200px;
+    margin-top: 100px;
+    margin-left: calc((100% - 200px)/2);
+  }
+  .profile_text_limit1 dl dt {
+    width: 60px;
+  }
+}
+
+
+
